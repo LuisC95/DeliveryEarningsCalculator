@@ -6,9 +6,15 @@
     "configurations": [
         {
             "type": "devtools-for-chrome",
-            "name": "Launch Chrome against localhost",
             "request": "launch",
-            "url": "http://localhost:8080"
+            "name": "Launch Chrome DevTools",
+            "file": "${workspaceFolder}/index.html"
+        },
+        {
+            "type": "devtools-for-chrome",
+            "request": "attach",
+            "name": "Attach Chrome DevTools",
+            "url": "http://localhost:8000/"
         }
     ]
 }
