@@ -18,11 +18,12 @@ function operation(e)
     traveledDistance = parseInt(e.target.value);
     deliveryOffer = parseInt(e.target.value);
     earnings = (taxes*(gasPerformance*(traveledDistance + deliveryDistance)))-deliveryOffer;
-    console.log(earnings);
+    console.log(e);
 }
 
 function updateValue(e)
 {
     operation; 
-    alert(deliveryDistance);
+    alert(earnings);
+    console.log(e)
 }
