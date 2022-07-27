@@ -14,16 +14,14 @@ earnings.addEventListener("click", updateValue);
 
 function operation(e)
 {
-    deliveryDistance = parseInt(e.target.value);
-    traveledDistance = parseInt(e.target.value);
-    deliveryOffer = parseInt(e.target.value);
-    earnings = (taxes*(gasPerformance*(traveledDistance + deliveryDistance)))-deliveryOffer;
-    console.log(e);
+    deliveryDistance = parseInt(deliveryDistance.value);
+    traveledDistance = parseInt(traveledDistance.value);
+    deliveryOffer = parseInt(deliveryOffer.value);
+    earnings = parseInt((taxes*(gasPerformance*(traveledDistance + deliveryDistance)))-deliveryOffer);
+    alert(earnings);
 }
 
 function updateValue(e)
 {
-    operation; 
-    alert(earnings);
-    console.log(e)
+    operation();
 }
