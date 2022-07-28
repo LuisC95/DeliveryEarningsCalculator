@@ -14,10 +14,11 @@ earnings.addEventListener("click", updateValue);
 
 function operation(e)
 {
-    deliveryDistance = parseInt(deliveryDistance.value);
-    traveledDistance = parseInt(traveledDistance.value);
-    deliveryOffer = parseInt(deliveryOffer.value);
-    earnings = parseInt((taxes*(gasPerformance*(traveledDistance + deliveryDistance)))-deliveryOffer);
+    deliveryDistance = Number(deliveryDistance.value);
+    traveledDistance = Number(traveledDistance.value);
+    deliveryOffer = Number(deliveryOffer.value);
+    earnings = (deliveryOffer - (taxes * (gasByMile * (traveledDistance + deliveryDistance))));
+    earnings = earnings.toFixed(2);
     alert(earnings);
 }
 
