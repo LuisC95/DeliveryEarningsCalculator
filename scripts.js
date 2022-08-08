@@ -24,5 +24,5 @@ function operation(e)
 
 function updateValue(e)
 {
-    operation();
+    operation(e);
 }
