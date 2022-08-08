@@ -19,12 +19,10 @@ function operation(e)
     deliveryOffer = Number(deliveryOffer.value);
     earnings = (deliveryOffer - (taxes * (gasByMile * (traveledDistance + deliveryDistance))));
     earnings = earnings.toFixed(2);
-    console.log(earnings);
+    alert(earnings);
 }
 
 function updateValue(e)
 {
-    operation(e);
+    operation();
 }
-
-//it's modified
